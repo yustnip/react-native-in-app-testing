@@ -8,22 +8,22 @@ A React Native component for testing native modules directly inside an app.
 
 2. Import RNIntegrationTests module to an empty React Native component:
 
-```js
-import RNIntegrationTests from 'react-native-integration-tests'
-```
+    ```js
+    import RNIntegrationTests from 'react-native-integration-tests'
+    ```
 
 3. Insert the imported RNIntegrationTests component into any another component and specify required props:
 
-```js
-<View>
-    <RNIntegrationTests
-        testFunctions={ arrayOfTestFunctions }
-        passedTitle="Passed"
-        failedTitle="Failed"
-        coverageText="Coverage of connected modules"
-    />
-</View>
-```
+    ```js
+    <View>
+        <RNIntegrationTests
+            testFunctions={ arrayOfTestFunctions }
+            passedTitle="Passed"
+            failedTitle="Failed"
+            coverageText="Coverage of connected modules"
+        />
+    </View>
+    ```
 
 ### How to write tests
 
