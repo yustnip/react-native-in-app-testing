@@ -8,7 +8,7 @@ import {
     Text,
     View,
     ScrollView
-// $FlowIgnore
+// $FlowExpectedError
 } from 'react-native'
 
 let descriptions: Array<string> = []
