@@ -6,15 +6,11 @@ A React Native component for testing native modules directly inside an app.
 
 1. `npm install react-native-integration-tests -D`
 
-2. Import RNIntegrationTests module to an empty React Native component:
+2. Import RNIntegrationTests module and insert the imported component into any another React Native component and specify required props:
 
     ```js
     import RNIntegrationTests from 'react-native-integration-tests'
-    ```
-
-3. Insert the imported RNIntegrationTests component into any another component and specify required props:
-
-    ```js
+    
     <View>
         <RNIntegrationTests
             testFunctions={ arrayOfTestFunctions }
@@ -47,7 +43,7 @@ Example with [chai](https://github.com/chaijs/chai) assertion library:
 import { NativeModules } from 'react-native'
 import RNIntegrationTests from 'react-native-integration-tests'
 const { it, connectModule } = RNIntegrationTests
-const { expect } = require( 'chai' )
+import { expect } from 'chai'
 
 const SomeNativeModule = connectModule( NativeModules.SomeNativeModule )
 
