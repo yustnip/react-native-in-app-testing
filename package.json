@@ -1,0 +1,15 @@
+{
+  "name": "react-native-integration-tests",
+  "version": "0.0.1",
+  "description": "A React Native component for testing native modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yustnip/react-native-integration-tests"
+  },
+  "author": "Nikita Yustovskiy",
+  "license": "MIT"
+}
