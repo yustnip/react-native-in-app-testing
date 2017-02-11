@@ -1,6 +1,6 @@
 # react-native-integration-tests
 
-A React Native component for testing native modules directly inside an app.
+A React Native component for testing native modules integration directly inside the existing app.
 
 ## Usage
 
