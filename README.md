@@ -1,5 +1,8 @@
 # react-native-integration-tests
 
+[![npm](https://img.shields.io/npm/dt/react-native-integration-tests.svg)](https://www.npmjs.com/package/react-native-integration-tests)
+[![npm](https://img.shields.io/npm/v/react-native-integration-tests.svg)](https://www.npmjs.com/package/react-native-integration-tests)
+
 A React Native component for testing native modules integration directly inside the existing app.
 
 ## Usage
