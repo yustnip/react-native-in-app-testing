@@ -1,7 +1,7 @@
 {
   "name": "react-native-integration-tests",
-  "version": "0.1.1",
-  "description": "A React Native component for testing native modules",
+  "version": "0.1.2",
+  "description": "A React Native component for testing native modules integration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
