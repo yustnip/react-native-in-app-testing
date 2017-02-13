@@ -42,6 +42,8 @@ Each of passed test functions has to return a promise and the test runner shows 
 
 Example with [chai](https://github.com/chaijs/chai) assertion library:
 
+*For correct work of the chai library may need to install [buffer](https://www.npmjs.com/package/buffer) as a dev dependency.*
+
 ```js
 import { NativeModules } from 'react-native'
 import RNIntegrationTests from 'react-native-integration-tests'
