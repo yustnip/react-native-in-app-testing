@@ -1,6 +1,6 @@
 import { NativeModules } from 'react-native'
-import RNIntegrationTests from 'react-native-integration-tests'
-const { it, connectModule } = RNIntegrationTests
+import ReactNativeInAppTesting from 'react-native-in-app-testing'
+const { it, connectModule } = ReactNativeInAppTesting 
 import { expect } from 'chai'
 
 const SomeNativeModule = connectModule( NativeModules.SomeNativeModule )

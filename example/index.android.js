@@ -1,7 +1,6 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
- * @flow
  */
 
 import React, { Component } from 'react';
@@ -11,7 +10,7 @@ import {
   Text,
   View
 } from 'react-native';
-import RNIntegrationTests from 'react-native-integration-tests';
+import ReactNativeInAppTesting from 'react-native-in-app-testing';
 
 import { arrayOfTestFunctions } from './arrayOfTestFunctions';
 
@@ -19,7 +18,7 @@ export default class ExampleApp extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <RNIntegrationTests
+        <ReactNativeInAppTesting
           testFunctions={arrayOfTestFunctions}
           passedTitle="Passed"
           failedTitle="Failed"

@@ -8,7 +8,6 @@ import {
     Text,
     View,
     ScrollView
-// $FlowExpectedError
 } from 'react-native'
 
 let descriptions: Array<string> = []
@@ -160,7 +159,6 @@ export default class RNIntegrationTests extends Component {
      * @return {void}
      */
     calculateCoverage() {
-        // $FlowIssue #1059
         const uniqCalledFunctions = [ ... new Set( calledFunctions ) ]
         const coveragePercents = uniqCalledFunctions.length * 100 / nativeFunctionsAmount
         const formattedCoveragePercents = coveragePercents.toFixed( 2 )
