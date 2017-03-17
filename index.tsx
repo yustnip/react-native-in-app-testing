@@ -211,9 +211,15 @@ export default class ReactNativeInAppTesting extends Component<IProps, IState> {
    * @return {void}
    */
   private calculateCoverage(): void {
-    const uniqCalledFunctions: any[] = [ ... new Set( calledFunctions ) ]
-    const coveragePercents: number = uniqCalledFunctions.length * 100 / nativeFunctionsAmount
-    const formattedCoveragePercents: string = coveragePercents.toFixed( 2 )
+    let formattedCoveragePercents: string
+
+    if ( nativeFunctionsAmount ) {
+      const uniqCalledFunctions: any[] = [ ... new Set( calledFunctions ) ]
+      const coveragePercents: number = uniqCalledFunctions.length * 100 / nativeFunctionsAmount
+      formattedCoveragePercents = coveragePercents.toFixed( 2 )
+    } else {
+      formattedCoveragePercents = '0'
+    }
 
     this.setState( {
       coveragePercents: formattedCoveragePercents,
