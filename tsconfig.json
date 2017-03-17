@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "target": "es6"
+  },
+  "include": [ "index.tsx" ],
+  "exclude": [ "node_modules" ]
+}

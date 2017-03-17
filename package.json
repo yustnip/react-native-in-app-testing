@@ -11,5 +11,9 @@
     "url": "git+https://github.com/yustnip/react-native-integration-tests"
   },
   "author": "Nikita Yustovskiy",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^15.0.16",
+    "@types/react-native": "^0.42.6"
+  }
 }
