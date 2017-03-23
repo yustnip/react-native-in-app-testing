@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { ScrollView, Text, View } from 'react-native'
 
 let descriptions: string[] = []
@@ -40,7 +40,7 @@ interface IProps {
   coverageText: string
 }
 
-export default class ReactNativeInAppTesting extends Component<IProps, IState> {
+export default class ReactNativeInAppTesting extends React.Component<IProps, IState> {
 
   /**
    * @static it - For import to the usage as a test cases wrapper
@@ -214,8 +214,8 @@ export default class ReactNativeInAppTesting extends Component<IProps, IState> {
     let formattedCoveragePercents: string
 
     if ( nativeFunctionsAmount ) {
-      const uniqCalledFunctions: any[] = [ ... new Set( calledFunctions ) ]
-      const coveragePercents: number = uniqCalledFunctions.length * 100 / nativeFunctionsAmount
+      const uniqCalledFunctionsCount: number = new Set( calledFunctions ).size
+      const coveragePercents: number = uniqCalledFunctionsCount * 100 / nativeFunctionsAmount
       formattedCoveragePercents = coveragePercents.toFixed( 2 )
     } else {
       formattedCoveragePercents = '0'
