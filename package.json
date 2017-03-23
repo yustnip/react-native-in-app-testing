@@ -1,6 +1,6 @@
 {
   "name": "react-native-in-app-testing",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A React Native component for testing directly inside the existing app",
   "main": "index.js",
   "scripts": {
