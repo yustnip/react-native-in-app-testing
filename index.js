@@ -6,7 +6,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import React, { Component } from 'react';
+import * as React from 'react';
 import { ScrollView, Text, View } from 'react-native';
 let descriptions = [];
 let nativeFunctionsAmount = 0;
@@ -17,7 +17,7 @@ function wrapOriginalFunction(originalFunction, functionName) {
         return originalFunction.apply(this, arguments);
     };
 }
-export default class ReactNativeInAppTesting extends Component {
+export default class ReactNativeInAppTesting extends React.Component {
     static it(description, testFunction) {
         descriptions.push(description);
         return testFunction;
@@ -121,8 +121,8 @@ export default class ReactNativeInAppTesting extends Component {
     calculateCoverage() {
         let formattedCoveragePercents;
         if (nativeFunctionsAmount) {
-            const uniqCalledFunctions = [...new Set(calledFunctions)];
-            const coveragePercents = uniqCalledFunctions.length * 100 / nativeFunctionsAmount;
+            const uniqCalledFunctionsCount = new Set(calledFunctions).size;
+            const coveragePercents = uniqCalledFunctionsCount * 100 / nativeFunctionsAmount;
             formattedCoveragePercents = coveragePercents.toFixed(2);
         }
         else {
